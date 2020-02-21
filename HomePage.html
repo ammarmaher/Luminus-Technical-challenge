@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adoption Cats</title>
+    <link rel="icon" type="image/ico" href="https://www.shareicon.net/data/512x512/2015/10/17/657769_cat_512x512.png" />
+    <meta charset="UTF-8">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Css/MainStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark sticky-nav">
+            <a class="navbar-brand">Adopt Your Cat </a>
+            <ul style="display: inline;">
+                <li class="my-2 my-sm-0" style="display: inline;"><a class="btn btn-outline-success active" href="HomePage.html">Home Page</a></li>
+                <li class="my-2 my-sm-0" style="display: inline;"><a class="btn btn-outline-success" href="addingPage.html">Add Cat For Adoption</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="root-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card ">
+                    <h5 class="card-header text-success">Find the perfect match</h5>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Adopt a cat that resembles your personality</h5>
+                        <p class="card-text ">The Jordan Cat Rescue has tons of cats who need good homes. One of the best ways to reach prospective adoptive homes is to have a website which contains a list of all these cats to be available for volunteers to choose their own.</p>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" id="card-dynamic">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="border-dark mb-3">
+                                            <div class="images-container">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <button id="show-other-btn" class="btn btn-success">Show more cats</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="full-image" tabindex="-1" role="dialog" aria-labelledby="full-image" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="border-dark mb-3">
+                <img id="clicked-img" class="card-img-top" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container text-center">
+            <small>Copyright &copy; Ammar Maher Sukkareah</small>
+        </div>
+    </footer>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
